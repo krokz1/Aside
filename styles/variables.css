@@ -1,0 +1,31 @@
+:root {
+    --color-darck: #1B1C21;
+    --color-grey: #7E7E82;
+
+    --background-color-body: rgba(248, 248, 248, 1);
+    --background-color-header: #FFFFFF;
+    --background-color-header-decor-line: #EAEAEA;
+    --background-color-button: #FF3E79;
+    --background-color-button-burger-decor-line: #ffffff;
+    --background-color-main-decor-line: #41F6D7;
+    --background-color-link-is-activ: #ffffff;
+    
+    --border-bottom-header: 1px solid #D9FFF5;
+    --border-link-is-activ: 2px solid #B8FFEC;
+
+    --font-family: 'TTLakes', sans-serif;
+
+    --padding-inline: 1rem;
+}
+
+@media (width>762px) {
+    :root {
+        --padding-inline: 1.5rem;
+    }
+}
+
+@media (width>1119px) {
+    :root {
+        --padding-inline: 2rem;
+    }
+}

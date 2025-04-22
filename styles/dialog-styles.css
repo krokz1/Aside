@@ -1,0 +1,209 @@
+/*DIALOG*/
+
+.body {
+    min-width: 768px;
+}
+
+.dialog {
+    max-width: 320px;
+    min-height: 1024px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 16px 0px 52px 0px #0E185033;
+}
+
+.dialog__container {
+    align-self: flex-start;
+    padding-inline: 1.5rem;
+    padding-block: 1.1706rem 2rem;
+}
+
+.dialog__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog__button--close {
+    position: relative;
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog__button--close::after {
+    position: absolute;
+    content: '';
+    width: 0.125rem;
+    height: 1.375rem;
+    background-color: var(--background-color-button-burger-decor-line);
+    rotate: 45deg;
+    border-radius: 1px;
+}
+
+.dialog__button--close::before {
+    position: absolute;
+    content: '';
+    width: 0.125rem;
+    height: 1.375rem;
+    background-color: var(--background-color-button-burger-decor-line);
+    rotate: -45deg;
+    border-radius: 1px;
+}
+
+.button:hover {
+    background-color: var(--background-color-main-decor-line);
+    opacity: 0.5;
+}
+
+.dialog__logo {
+    display: flex;
+    margin-inline-start: 1rem;
+
+}
+
+.dialog__button--search {
+    padding-inline: 0.75rem;
+    padding-block: 0.75rem;
+}
+
+.dialog__menu {
+    margin-block-start: 2.8919rem;
+    margin-block-end: auto;
+}
+
+.dialog__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dialog__menu-link:nth-of-type(1) {
+    margin-block: 0.25rem;
+    line-height: 1.5rem;
+}
+
+.dialog__menu-link:hover {
+    text-decoration: underline;
+}
+
+.dialog__menu-link:active {
+    color: aqua;
+}
+
+.dialog__menu-link:focus {
+    outline: none;
+}
+
+.dialog__menu-link:focus-visible {
+    outline: 1px solid var(--color-darck);
+}
+
+.link-activ {
+    position: relative;
+    color: var(--color-grey);
+}
+
+.link-activ::after {
+        position: absolute;
+        top: -0.3125rem;
+        left: -1.5rem;
+        content: '';
+        width: 0.25rem;
+        height: 2rem;
+        background-color: var(--background-color-main-decor-line);
+        border-radius: 1px;
+}
+
+.servises-list {
+    display: flex;
+}
+
+.servises-list::after  {
+    display: none;
+}
+
+.dialog__footer-menu {
+    justify-content: left;
+    gap: 1rem;
+}
+.footer__button-call {
+    padding-inline: 0.6875rem;
+    padding-block: 0.6872rem;
+}
+
+.footer__button-chat {
+    padding-inline: 0.625rem;
+    padding-block: 0.6875rem 0.5625rem;
+}
+
+.footer__button-profile {
+    padding-inline: 0.625rem;
+    padding-block: 0.6872rem;
+}
+
+.dialog__company-contact {
+    margin-block: 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.dialog__company-email {
+    font-style: normal;
+    color: var(--color-darck);
+}
+
+.dialog__company-telephone {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -0.6px;
+    color: var(--color-darck);
+}
+
+.dialog__company-link:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.dialog__company-link:active {
+    color:aqua;
+}
+
+.dialog__company-link:focus {
+    outline: none;
+}
+
+.dialog__company-link:focus-visible {
+    outline: 1px solid var(--color-darck);
+}
+
+.dialog__language-switcher {
+    display: flex;
+    gap: 0.4375rem;
+}
+
+.lang-button:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.lang-button:active {
+    color: aqua;
+}
+
+.lang-button:focus {
+    outline: none;
+}
+
+.lang-button:focus-visible {
+    outline: 1px solid var(--color-darck);
+}
+
+.lang-button--active {
+    color: var(--color-grey);
+}

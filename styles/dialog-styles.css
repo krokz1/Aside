@@ -65,12 +65,16 @@
 }
 
 .dialog__button--search {
-    padding-inline: 0.75rem;
-    padding-block: 0.75rem;
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+    background-image: url('../images/search.svg');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .dialog__menu {
-    margin-block-start: 2.8919rem;
+    margin-block-start: 3.125rem;
     margin-block-end: auto;
 }
 
@@ -129,23 +133,29 @@
     justify-content: left;
     gap: 1rem;
 }
+
+.footer__button {
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
 .footer__button-call {
-    padding-inline: 0.6875rem;
-    padding-block: 0.6872rem;
+    background-image: url('../images/call.svg');
 }
 
 .footer__button-chat {
-    padding-inline: 0.625rem;
-    padding-block: 0.6875rem 0.5625rem;
+    background-image: url('../images/chat.svg');
 }
 
 .footer__button-profile {
-    padding-inline: 0.625rem;
-    padding-block: 0.6872rem;
+    background-image: url('../images/profile.svg');
 }
 
 .dialog__company-contact {
-    margin-block: 1rem 2.5rem;
+    margin-block: 0.625rem 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -182,28 +192,59 @@
     outline: 1px solid var(--color-darck);
 }
 
-.dialog__language-switcher {
+.dialog__lang {
+    
+}
+
+.dialog__lang-list {
     display: flex;
-    gap: 0.4375rem;
+    gap: 0.5625rem;
 }
 
-.lang-button:hover {
-    text-decoration: underline;
-    opacity: 0.5;
+.dialog__lang-item {
+    position: relative;
 }
 
-.lang-button:active {
+.dialog__lang-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.dialog__lang-label {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.0125rem;
+    color: var(--color-darck);
+}
+
+.dialog__lang-label:hover {
     color: aqua;
 }
 
-.lang-button:focus {
-    outline: none;
+.dialog__lang-label:active {
+    text-decoration: underline;
 }
 
-.lang-button:focus-visible {
-    outline: 1px solid var(--color-darck);
+
+.dialog__lang-checkbox:focus {
+    outline: 2px solid aqua;
+    outline-offset: 2px; 
 }
 
-.lang-button--active {
+.dialog__lang-checkbox:focus-visible {
+    outline: 2px solid aqua;
+    outline-offset: 2px; 
+}
+
+.dialog__lang-checkbox:checked + .dialog__lang-label  {
+    color: var(--color-grey);
+}
+
+.dialog__lang-label--activ {
     color: var(--color-grey);
 }

@@ -26,15 +26,9 @@
                 >
             </a>
             <button class="button dialog__button--search">
-                <img class="button__images" 
-                src="images/search.svg" 
-                alt="Поиск"
-                width="17"
-                height="17"
-                >
             </button>
         </header>
-        <div class="dialog__menu">
+        <nav class="dialog__menu">
             <ul class="dialog__menu-list">
                 <li class="dialog__menu-item">
                     <a href="#" class="dialog__menu-link link-activ">
@@ -77,40 +71,22 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
         <footer class="dialog__footer">
             <ul class="servises-list contact-list flex dialog__footer-menu">
                 <li class="contact-item">
-                    <button class="button button-call footer__button-call" type="button">
-                        <img
-                        class="button__images" 
-                        src="images/call.svg" 
-                        alt="Позвонить" 
-                        width="18" 
-                        height="18"
-                        >
+                    <button class="button footer__button footer__button-call" type="button">
+                        
                     </button>
                 </li>
                 <li class="contact-item">
-                    <button class="button button-chat footer__button-chat" type="button">
-                        <img 
-                        class="button__images" 
-                        src="images/chat.svg" 
-                        alt="Написать" 
-                        width="20" 
-                        height="20"
-                        >
+                    <button class="button footer__button footer__button-chat" type="button">
+                        
                     </button>
                 </li>
                 <li class="contact-item">
-                    <button class="button button-profile footer__button-profile" type="button">
-                        <img 
-                        class="button__images" 
-                        src="images/profile.svg" 
-                        alt="Профиль" 
-                        width="20" 
-                        height="18"
-                        >
+                    <button class="button footer__button footer__button-profile" type="button">
+                        
                     </button>
                 </li>
             </ul>
@@ -122,23 +98,22 @@
                     8 800 890 8900  
                 </a>
             </address>
-            <ul class="dialog__language-switcher">
-                <li class="dialog__language-switcher-item">
-                    <button class="lang-button lang-button--active" data-lang="ru" type="button">
-                        RU
-                    </button>
-                </li>
-                <li class="dialog__language-switcher-item">
-                    <button class="lang-button" data-lang="en" type="button">
-                        EN
-                    </button>
-                </li>
-                <li class="dialog__language-switcher-item">
-                    <button class="lang-button" data-lang="ch" type="button">
-                        CH
-                    </button>
-                </li>
-            </ul>
+            <form class="dialog__lang">
+                <ul class="dialog__lang-list">
+                    <li class="dialog__lang-item">
+                        <input class="dialog__lang-checkbox" type="radio" id="lang-ru" name="language" value="RU">
+                        <label class="dialog__lang-label dialog__lang-label--activ" tabindex="0" for="lang-ru">RU</label>
+                    </li>
+                    <li class="dialog__lang-item">
+                        <input class="dialog__lang-checkbox" type="radio" id="lang-en" name="language" value="EN">
+                        <label class="dialog__lang-label" tabindex="0" for="lang-en">EN</label>
+                    </li>
+                    <li class="dialog__lang-item">
+                        <input class="dialog__lang-checkbox" type="radio" id="lang-ch" name="language" value="CH">
+                        <label class="dialog__lang-label"  tabindex="0" for="lang-ch">CH</label>
+                    </li>
+                </ul>
+            </form>
         </footer>
     </aside>
 </body>
